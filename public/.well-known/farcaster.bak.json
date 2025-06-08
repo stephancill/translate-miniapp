@@ -1,0 +1,13 @@
+{
+  "frame": {
+    "version": "1",
+    "name": "Cast Translator",
+    "castShareUrl": "https://translate-cast.steer.fun",
+    "iconUrl": "https://translate-cast.steer.fun/icon.png",
+    "homeUrl": "https://translate-cast.steer.fun",
+    "imageUrl": "https://translate-cast.steer.fun/opengraph-image",
+    "buttonTitle": "🔤 Translate",
+    "splashImageUrl": "https://translate-cast.steer.fun/icon.png",
+    "splashBackgroundColor": "#ffffff"
+  }
+}

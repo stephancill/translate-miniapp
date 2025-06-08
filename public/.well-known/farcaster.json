@@ -1,0 +1,18 @@
+{
+  "frame": {
+    "version": "1",
+    "name": "Cast Translator",
+    "castShareUrl": "https://stephancill.github.io/translate-miniapp",
+    "iconUrl": "https://stephancill.github.io/translate-miniapp/icon.png",
+    "homeUrl": "https://stephancill.github.io/translate-miniapp",
+    "imageUrl": "https://stephancill.github.io/translate-miniapp/opengraph-image",
+    "buttonTitle": "🔤 Translate",
+    "splashImageUrl": "https://stephancill.github.io/translate-miniapp/icon.png",
+    "splashBackgroundColor": "#ffffff"
+  },
+  "accountAssociation": {
+    "header": "eyJmaWQiOjE2ODksInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHgyNzM4QjIxY0I5NTIwMzM4RjlBMzc1YzNiOTcxQjE3NzhhZTEwMDRhIn0",
+    "payload": "eyJkb21haW4iOiJzdGVwaGFuY2lsbC5naXRodWIuaW8ifQ",
+    "signature": "MHhkNjMxMjQzZjQ5MzQ1NmE2ZjFlMTViZjExODNkMGFmNDg5YzkxZjUzYzgwNTEyZTlhNzBiOTI5Njc5NzEwYTIyMDM5OThkZWVlZTNhOTljYTdhNDBkNGU1NmU5OWFiYzk0ZWUzMzJjMTA5YTYxZDk0NzhmN2E1NDQ0ZmE4OWEyNTFj"
+  }
+}
