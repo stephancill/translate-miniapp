@@ -55,28 +55,54 @@ function App() {
     }
   };
 
+  const handleAddMiniApp = async () => {
+    await sdk.actions.addMiniApp();
+  };
+
   return (
     <div className="app">
       <h1>Cast Translator</h1>
-      {translateUrl ? (
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "16px",
+          alignItems: "center",
+        }}
+      >
         <button
-          onClick={handleTranslate}
+          onClick={handleAddMiniApp}
           style={{
-            padding: "16px 32px",
-            fontSize: "20px",
-            backgroundColor: "#4CAF50",
+            padding: "12px 24px",
+            fontSize: "16px",
+            backgroundColor: "#1a1a1a",
             color: "white",
             border: "none",
             borderRadius: "8px",
             cursor: "pointer",
-            marginTop: "20px",
           }}
         >
-          🔤 Translate Cast
+          ➕ Add to Farcaster
         </button>
-      ) : (
-        <p>Loading cast...</p>
-      )}
+        {translateUrl ? (
+          <button
+            onClick={handleTranslate}
+            style={{
+              padding: "16px 32px",
+              fontSize: "20px",
+              backgroundColor: "#4CAF50",
+              color: "white",
+              border: "none",
+              borderRadius: "8px",
+              cursor: "pointer",
+            }}
+          >
+            🔤 Translate Cast
+          </button>
+        ) : (
+          <p>Loading cast...</p>
+        )}
+      </div>
     </div>
   );
 }
