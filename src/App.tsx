@@ -60,7 +60,14 @@ function App() {
     console.log("translateUrl", translateUrl);
     if (translateUrl) {
       console.log("opening url", translateUrl);
-      sdk.actions.openUrl(translateUrl);
+      const isMobile = /android|iphone|ipad|ipod|mobile/i.test(
+        navigator.userAgent
+      );
+      if (isMobile) {
+        window.location.href = translateUrl;
+      } else {
+        sdk.actions.openUrl(translateUrl);
+      }
     }
   }, [translateUrl]);
 
