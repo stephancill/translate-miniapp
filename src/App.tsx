@@ -17,6 +17,10 @@ async function fetchCastText(fid: number, hash: string) {
 
 function App() {
   const [translateUrl, setTranslateUrl] = useState<string | null>(null);
+  const [castText, setCastText] = useState<string | null>(null);
+  const [targetLang, setTargetLang] = useState(() => {
+    return localStorage.getItem("targetLang") || "en";
+  });
 
   useEffect(() => {
     // Get cast hash and FID from URL parameters
@@ -28,21 +32,25 @@ function App() {
 
     if (castHash && castFid) {
       // Fetch the cast text using the author's FID and cast hash
-      fetchCastText(parseInt(castFid), castHash).then((castText) => {
-        if (castText) {
-          // Construct Google Translate URL
-          const url = new URL("https://translate.google.com");
-          url.searchParams.append("sl", "auto"); // auto-detect source language
-          url.searchParams.append("tl", "en"); // default to English
-          url.searchParams.append("q", castText);
-          url.searchParams.append("ie", "UTF-8");
-          url.searchParams.append("oe", "UTF-8");
-
-          setTranslateUrl(url.toString());
+      fetchCastText(parseInt(castFid), castHash).then((text) => {
+        if (text) {
+          setCastText(text);
         }
       });
     }
   }, []);
+
+  useEffect(() => {
+    if (castText) {
+      const url = new URL("https://translate.google.com");
+      url.searchParams.append("sl", "auto");
+      url.searchParams.append("tl", targetLang);
+      url.searchParams.append("q", castText);
+      url.searchParams.append("ie", "UTF-8");
+      url.searchParams.append("oe", "UTF-8");
+      setTranslateUrl(url.toString());
+    }
+  }, [castText, targetLang]);
 
   useEffect(() => {
     sdk.actions.ready();
@@ -85,6 +93,23 @@ function App() {
         >
           ➕ Add to Farcaster
         </button>
+        <label style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
+          Target language
+          <select
+            value={targetLang}
+            onChange={(e) => {
+              setTargetLang(e.target.value);
+              localStorage.setItem("targetLang", e.target.value);
+            }}
+            style={{ padding: "8px" }}
+          >
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <option value="de">German</option>
+            <option value="zh-CN">Chinese (Simplified)</option>
+          </select>
+        </label>
         {!translateUrl && <p>Loading cast...</p>}
       </div>
     </div>
