@@ -1,3 +1,7 @@
+# Cast Translator
+
+Translate Farcaster casts using Google Translate. You can choose the language you want casts translated into via a dropdown in the miniapp. The selected language is stored in `localStorage` so your preference is remembered on future visits.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
