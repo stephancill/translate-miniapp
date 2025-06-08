@@ -1,6 +1,6 @@
 # Cast Translator
 
-Translate Farcaster casts using Google Translate. You can choose the language you want casts translated into via a dropdown in the miniapp. The selected language is stored in `localStorage` so your preference is remembered on future visits.
+Translate Farcaster casts using Google Translate. You can choose the language you want casts translated into via a dropdown in the miniapp. The selected language is stored in `localStorage` so your preference is remembered on future visits. On mobile devices the app redirects straight to Google Translate while desktop users open the page via the `openUrl` action.
 
 # React + TypeScript + Vite
 
