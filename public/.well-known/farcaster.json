@@ -2,13 +2,25 @@
   "frame": {
     "version": "1",
     "name": "Cast Translator",
+    "homeUrl": "https://translate-cast.steer.fun",
     "castShareUrl": "https://translate-cast.steer.fun",
     "iconUrl": "https://translate-cast.steer.fun/icon.png",
-    "homeUrl": "https://translate-cast.steer.fun",
-    "imageUrl": "https://translate-cast.steer.fun/opengraph-image",
-    "buttonTitle": "🔤 Translate",
     "splashImageUrl": "https://translate-cast.steer.fun/icon.png",
-    "splashBackgroundColor": "#ffffff"
+    "splashBackgroundColor": "#ffffff",
+    "subtitle": "Translate any Farcaster cast",
+    "description": "Instantly translate any Farcaster cast to your preferred language. Supports multiple languages and remembers your preferences.",
+    "primaryCategory": "utility",
+    "tags": [
+      "translation",
+      "language",
+      "farcaster",
+      "utility",
+      "productivity"
+    ],
+    "heroImageUrl": "https://translate-cast.steer.fun/og.png",
+    "ogTitle": "Cast Translator - Translate Farcaster Casts",
+    "ogDescription": "Translate any Farcaster cast to your preferred language with one click. Supports multiple languages and remembers your preferences.",
+    "ogImageUrl": "https://translate-cast.steer.fun/og.png"
   },
   "accountAssociation": {
     "header": "eyJmaWQiOjE2ODksInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHgyNzM4QjIxY0I5NTIwMzM4RjlBMzc1YzNiOTcxQjE3NzhhZTEwMDRhIn0",
