@@ -22,12 +22,12 @@ function App() {
     return localStorage.getItem("targetLang") || "en";
   });
 
-  useEffect(() => {
-    // Get cast hash and FID from URL parameters
-    const params = new URLSearchParams(window.location.search);
-    const castHash = params.get("castHash");
-    const castFid = params.get("castFid");
+  // Get cast hash and FID from URL parameters
+  const params = new URLSearchParams(window.location.search);
+  const castHash = params.get("castHash");
+  const castFid = params.get("castFid");
 
+  useEffect(() => {
     console.log({ castHash, castFid });
 
     if (castHash && castFid) {
@@ -38,7 +38,7 @@ function App() {
         }
       });
     }
-  }, []);
+  }, [castHash, castFid]);
 
   useEffect(() => {
     if (castText) {
@@ -110,7 +110,7 @@ function App() {
             <option value="zh-CN">Chinese (Simplified)</option>
           </select>
         </label>
-        {!translateUrl && <p>Loading cast...</p>}
+        {castHash && castFid && !translateUrl && <p>Loading cast...</p>}
       </div>
     </div>
   );

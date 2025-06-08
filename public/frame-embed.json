@@ -2,13 +2,13 @@
   "version": "next",
   "imageUrl": "https://translate-cast.steer.fun/og.png",
   "button": {
-    "title": "Translate Cast",
+    "title": "Open",
     "action": {
       "type": "launch_frame",
       "url": "https://translate-cast.steer.fun",
-      "name": "Cast Translator",
+      "name": "Translate",
       "splashImageUrl": "https://translate-cast.steer.fun/icon.png",
-      "splashBackgroundColor": "#ffffff"
+      "splashBackgroundColor": "#000000"
     }
   }
 }
