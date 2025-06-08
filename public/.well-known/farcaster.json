@@ -1,7 +1,7 @@
 {
   "frame": {
     "version": "1",
-    "name": "Cast Translator",
+    "name": "Translate",
     "homeUrl": "https://translate-cast.steer.fun",
     "castShareUrl": "https://translate-cast.steer.fun",
     "iconUrl": "https://translate-cast.steer.fun/icon.png",
@@ -18,8 +18,8 @@
       "productivity"
     ],
     "heroImageUrl": "https://translate-cast.steer.fun/og.png",
-    "ogTitle": "Cast Translator - Translate Farcaster Casts",
-    "ogDescription": "Translate any Farcaster cast to your preferred language with one click. Supports multiple languages and remembers your preferences.",
+    "ogTitle": "Cast Translator",
+    "ogDescription": "Translate any Farcaster cast to your preferred language with one click.",
     "ogImageUrl": "https://translate-cast.steer.fun/og.png"
   },
   "accountAssociation": {
