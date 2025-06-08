@@ -140,28 +140,6 @@ function App() {
         </label>
         {castHash && castFid && !translateUrl && <p>Loading cast...</p>}
       </div>
-      <div
-        style={{
-          position: "fixed",
-          bottom: "8px",
-          left: "50%",
-          transform: "translateX(-50%)",
-          fontSize: "10px",
-          color: "#666",
-          textAlign: "center",
-          width: "100%",
-          maxWidth: "600px",
-          wordBreak: "break-all",
-          padding: "0 16px",
-        }}
-      >
-        {navigator.userAgent} isMobile:{" "}
-        {/android|iphone|ipad|ipod|mobile|warpcast|farcaster/i.test(
-          navigator.userAgent
-        )
-          ? "true"
-          : "false"}
-      </div>
     </div>
   );
 }
