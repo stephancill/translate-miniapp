@@ -2,17 +2,17 @@
   "frame": {
     "version": "1",
     "name": "Cast Translator",
-    "castShareUrl": "https://stephancill.github.io/translate-miniapp",
-    "iconUrl": "https://stephancill.github.io/translate-miniapp/icon.png",
-    "homeUrl": "https://stephancill.github.io/translate-miniapp",
-    "imageUrl": "https://stephancill.github.io/translate-miniapp/opengraph-image",
+    "castShareUrl": "https://translate-cast.steer.fun",
+    "iconUrl": "https://translate-cast.steer.fun/icon.png",
+    "homeUrl": "https://translate-cast.steer.fun",
+    "imageUrl": "https://translate-cast.steer.fun/opengraph-image",
     "buttonTitle": "🔤 Translate",
-    "splashImageUrl": "https://stephancill.github.io/translate-miniapp/icon.png",
+    "splashImageUrl": "https://translate-cast.steer.fun/icon.png",
     "splashBackgroundColor": "#ffffff"
   },
   "accountAssociation": {
     "header": "eyJmaWQiOjE2ODksInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHgyNzM4QjIxY0I5NTIwMzM4RjlBMzc1YzNiOTcxQjE3NzhhZTEwMDRhIn0",
-    "payload": "eyJkb21haW4iOiJzdGVwaGFuY2lsbC5naXRodWIuaW8ifQ",
-    "signature": "MHhkNjMxMjQzZjQ5MzQ1NmE2ZjFlMTViZjExODNkMGFmNDg5YzkxZjUzYzgwNTEyZTlhNzBiOTI5Njc5NzEwYTIyMDM5OThkZWVlZTNhOTljYTdhNDBkNGU1NmU5OWFiYzk0ZWUzMzJjMTA5YTYxZDk0NzhmN2E1NDQ0ZmE4OWEyNTFj"
+    "payload": "eyJkb21haW4iOiJ0cmFuc2xhdGUtY2FzdC5zdGVlci5mdW4ifQ",
+    "signature": "MHhkNTQzMzI0MGIzYzM0Y2NiOWM2YTc0NTZmZjk0ZWRiYThhMmVjYjVmZGUyMzczMmYyOTE3NGQ3YzYyNTQ3NmRmNTEzNWViNWM1NGNiNGYwMDlkMjliZWJhZGMyMGM0NTE2ODdhMzU2Mjg1NzJlYWM4YTQxOTMwNjA4NzRlZTkyOTFj"
   }
 }
