@@ -38,7 +38,6 @@ function App() {
           url.searchParams.append("ie", "UTF-8");
           url.searchParams.append("oe", "UTF-8");
 
-          console.log({ translateUrl: url.toString() });
           setTranslateUrl(url.toString());
         }
       });
@@ -49,11 +48,13 @@ function App() {
     sdk.actions.ready();
   }, []);
 
-  const handleTranslate = async () => {
+  useEffect(() => {
+    console.log("translateUrl", translateUrl);
     if (translateUrl) {
-      await sdk.actions.openUrl(translateUrl);
+      console.log("opening url", translateUrl);
+      sdk.actions.openUrl(translateUrl);
     }
-  };
+  }, [translateUrl]);
 
   const handleAddMiniApp = async () => {
     await sdk.actions.addMiniApp();
@@ -84,24 +85,7 @@ function App() {
         >
           ➕ Add to Farcaster
         </button>
-        {translateUrl ? (
-          <button
-            onClick={handleTranslate}
-            style={{
-              padding: "16px 32px",
-              fontSize: "20px",
-              backgroundColor: "#4CAF50",
-              color: "white",
-              border: "none",
-              borderRadius: "8px",
-              cursor: "pointer",
-            }}
-          >
-            🔤 Translate Cast
-          </button>
-        ) : (
-          <p>Loading cast...</p>
-        )}
+        {!translateUrl && <p>Loading cast...</p>}
       </div>
     </div>
   );
