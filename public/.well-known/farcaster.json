@@ -6,7 +6,7 @@
     "castShareUrl": "https://translate-cast.steer.fun",
     "iconUrl": "https://translate-cast.steer.fun/icon.png",
     "splashImageUrl": "https://translate-cast.steer.fun/icon.png",
-    "splashBackgroundColor": "#ffffff",
+    "splashBackgroundColor": "#000000",
     "subtitle": "Translate any Farcaster cast",
     "description": "Instantly translate any Farcaster cast to your preferred language. Supports multiple languages and remembers your preferences.",
     "primaryCategory": "utility",
